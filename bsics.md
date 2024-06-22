@@ -70,3 +70,7 @@
             );
 
     ```
+
+### Template Hierarchy
+
+<img src="https://i0.wp.com/developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png?ssl=1" alt="word-press template hierarchy explained">
