@@ -1,21 +1,5 @@
 # Any thing that goes into function.php
 
-## Custom query
-
-```php
-    <?php 
-        $query_object_var = WP_Query(array(
-            "post_per_page" => 2, // number of result that the query will fetch
-        ));
-
-        // also change the_post() to $query_object_var->the_post();
-        // also change have_posts() to $query_object_var->have_posts();
-
-        // at the end of the while loop reset to the default
-        wp_reset_postdata();
-    ?>
-```
-
 ## to add `script` or any `style` file need to use the following code in the `function.php` file
 
 ```php
@@ -23,7 +7,7 @@
     <?php
 
     // the following section is to add any script or style file
-    function script-enqueuing_func_name(){
+    function script_enqueuing_func_name(){
         // get_styleSheet_uri() ==> gives you the location of the main style sheet location.
         wp_enqueue_style("provide_name_to_identify", get_theme_file_uri("file relative path goes here"));
     }
